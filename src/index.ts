@@ -6,17 +6,17 @@ function sayHello(name: string) {
 sayHello("World");
 
 // 2
-import { name } from "./lib.js";
-
-sayHello(name);
-
-// 3
 async function getData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
   return await res.json();
 }
 
 getData().then((data) => console.log(data));
+
+// 3
+import { name } from "./lib.js";
+
+sayHello(name);
 
 // 4
 import * as fs from "fs";
