@@ -1,1 +1,1 @@
-export const anotherFile = 10;
+export const name = "Tom";
